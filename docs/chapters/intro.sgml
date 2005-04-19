@@ -60,14 +60,14 @@
 	    upstream and Debian trees automatically.
 	  </para>
 	</listitem>
-	<listitem><para>tla-importorig can import an upstream tar.gz or a
+	<listitem><para>tbp-importorig can import an upstream tar.gz or a
 	    directory into your archive with a single command.</para>
 	</listitem>
-	<listitem><para>tla-buildpackage can use an existing
+	<listitem><para>tbp-buildpackage can use an existing
 	    orig.tar.gz, or can build you one from the Arch archive if
 	    necessary.</para>
 	</listitem>
-	<listitem><para>tla-buildpackage ensures that Arch metadata
+	<listitem><para>tbp-buildpackage ensures that Arch metadata
 	    that should not be in the orig.tar.gz or diff.gz does not
 	    show up there.
 	  </para>
