@@ -1,5 +1,5 @@
 # arch-tag: tla buildpackage utilities for handling configs
-# Copyright (C) 2003 John Goerzen
+# Copyright (C) 2003 - 2005 John Goerzen
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -35,7 +35,8 @@ def makepkgconfigifneeded(configtype, package):
     if not os.path.exists('configs/%s/%s' % (configtype, package)):
         print "Adding new config dir for this %s package" % configtype
         os.mkdir('configs/%s/%s' % (configtype, package))
-        extcmd.run('tla %s configs/%s/%s' % (cmd().add, configtype, package))
+        extcmd.run('tla %s configs/%s/%s' % (' '.join(cmd().add),
+                                             configtype, package))
 
 def makepkgdirifneeded(package):
     """Assumes we are in wc dir already."""

@@ -68,7 +68,7 @@ extcmd.qrun('tla %s tagline' % cmd().tagging_method)
 print "Populating config tree..."
 for newdir in ['configs', 'configs/upstream', 'configs/debian']:
     os.mkdir(newdir)
-    extcmd.qrun('tla %s %s' % (cmd().add, newdir))
+    extcmd.qrun('tla %s %s' % (' '.join(cmd().add), newdir))
     
 print "Importing config tree..."
 extcmd.qrun('tla import')
