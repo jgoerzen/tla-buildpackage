@@ -1,7 +1,7 @@
 Source: tla-buildpackage
 Section: devel
 Priority: optional
-Maintainer: John Goerzen <jgoerzen@complete.org>
+Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends-Indep: debhelper (>= 4.1.80), python2.3-dev, gtk-doc-tools, sgml2x, docbook-utils, jade, tla-load-dirs (>= 1.0.23), lynx, scons, xpdf-utils
 Standards-Version: 3.6.0
 
